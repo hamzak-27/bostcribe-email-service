@@ -1,0 +1,5 @@
+{
+  "runtime": "python@3.9",
+  "handler": "send-schedule-email.handler",
+  "memory": 256
+} 

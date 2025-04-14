@@ -1,0 +1,14 @@
+{
+  "name": "botscribe-email-service",
+  "version": "1.0.0",
+  "description": "Email service for BotScribe",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "license": "MIT"
+} 
