@@ -1,17 +1,37 @@
 {
     "version": 2,
+    "functions": {
+      "api/*.py": {
+        "runtime": "python3.9"
+      }
+    },
     "routes": [
       {
         "src": "/send-contact-email",
-        "dest": "/api/send-contact-email.py"
+        "dest": "/api/send-contact-email.py",
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+          "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+        }
       },
       {
         "src": "/send-schedule-email",
-        "dest": "/api/send-schedule-email.py"
+        "dest": "/api/send-schedule-email.py",
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+          "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+        }
       },
       {
         "src": "/health",
-        "dest": "/api/health.py"
+        "dest": "/api/health.py",
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+          "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+        }
       }
     ]
   }
