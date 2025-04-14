@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "functions": {
+      "api/*.py": {
+        "runtime": "python3.9"
+      }
+    },
+    "routes": [
+      {
+        "src": "/send-contact-email",
+        "dest": "/api/send-contact-email.py"
+      },
+      {
+        "src": "/send-schedule-email",
+        "dest": "/api/send-schedule-email.py"
+      },
+      {
+        "src": "/health",
+        "dest": "/api/health.py"
+      }
+    ]
+  }
