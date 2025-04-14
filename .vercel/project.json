@@ -1,0 +1,10 @@
+{
+  "projectId": "botscribe-email-service",
+  "orgId": "your-organization-id",
+  "settings": {
+    "framework": null,
+    "buildCommand": null,
+    "devCommand": null,
+    "outputDirectory": null
+  }
+} 
